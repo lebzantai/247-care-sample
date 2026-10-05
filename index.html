@@ -3,158 +3,186 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>24/7 Care Electrical and Plumbing</title>
+  <title>24/7 Care Electrical and Plumbing | Florida, Johannesburg</title>
   <meta name="description" content="Electricians and plumbers in Florida, Johannesburg. Open 24 hours. No call-out fee. Free quotes across Gauteng. Call or WhatsApp 079 218 5175." />
+  <meta property="og:title" content="24/7 Care Electrical and Plumbing" />
+  <meta property="og:description" content="Open all night. No call-out fee. Free quotes. 079 218 5175." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23172333'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-size='11' fill='%23f4efe6' font-family='Georgia'%3E24%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <style>
-    :root { --ink:#1c1c1c; --muted:#5c5c5c; --line:#e2e2e2; --blue:#123a63; --paper:#f7f7f6; --wa:#128C4A; }
-    * { box-sizing: border-box; }
-    body { margin:0; font:16px/1.45 "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color:var(--ink); background:#fff; }
+    :root { --ink:#172033; --muted:#5c6573; --paper:#f4efe6; --card:#fffdf8; --line:#e6dccb; --copper:#c45c26; --navy:#172033; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font:17px/1.5 Manrope, system-ui, sans-serif; color:var(--ink); background:var(--paper); }
     a { color:inherit; }
-    .bar { background:var(--blue); color:#fff; font-size:13px; padding:8px 16px; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; }
-    header { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:14px 16px; border-bottom:1px solid var(--line); }
-    .brand { display:flex; align-items:center; gap:10px; text-decoration:none; }
-    .mark { width:46px; height:46px; border-radius:50%; border:2px solid #c4a15a; background:#102033; color:#f3ead2; display:grid; place-items:center; font-size:12px; font-weight:700; flex:none; }
-    .brand b { display:block; font-size:16px; }
-    .brand span { display:block; color:var(--muted); font-size:13px; }
-    .phone { font-weight:700; text-decoration:none; font-size:18px; color:var(--blue); white-space:nowrap; }
-    .wrap { max-width:880px; margin:0 auto; padding:28px 16px 40px; }
-    h1 { font-size:32px; line-height:1.15; margin:0 0 10px; font-weight:700; letter-spacing:0; }
-    .lead { margin:0 0 18px; max-width:62ch; }
-    .actions { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:22px; }
-    .btn { display:inline-block; text-decoration:none; padding:11px 14px; font-weight:700; border:1px solid var(--blue); }
-    .btn-fill { background:var(--blue); color:#fff; }
-    .btn-wa { background:var(--wa); border-color:var(--wa); color:#fff; }
-    .facts { display:grid; grid-template-columns:repeat(3,1fr); border:1px solid var(--line); }
-    .facts div { padding:12px 14px; }
-    .facts div + div { border-left:1px solid var(--line); }
-    .facts b { display:block; font-size:15px; }
-    .facts span { color:var(--muted); font-size:13px; }
-    h2 { font-size:20px; margin:32px 0 8px; }
-    p { margin:0 0 12px; }
-    .cols { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+    img { display:block; max-width:100%; }
+    .wrap { width:min(1120px, calc(100% - 32px)); margin:0 auto; }
+    .top { background:var(--navy); color:#f4efe6; font-size:14px; }
+    .top .wrap { display:flex; justify-content:space-between; gap:12px; padding:9px 0; }
+    .top a { color:#fff; font-weight:800; text-decoration:none; }
+    header { position:sticky; top:0; z-index:10; background:rgba(255,253,248,.94); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+    header .wrap { display:flex; align-items:center; justify-content:space-between; min-height:72px; gap:16px; }
+    .logo { text-decoration:none; }
+    .logo b { font-size:20px; letter-spacing:-.03em; }
+    .logo span { display:block; color:var(--muted); font-size:12px; font-weight:600; }
+    nav { display:flex; gap:18px; font-weight:700; font-size:15px; }
+    nav a { text-decoration:none; }
+    .call { background:var(--copper); color:#fff; text-decoration:none; font-weight:800; padding:11px 14px; border-radius:6px; }
+    .hero { display:grid; grid-template-columns:1.05fr .95fr; gap:40px; align-items:center; padding:42px 0 18px; }
+    .eyebrow { margin:0 0 8px; color:var(--copper); font-weight:800; font-size:12px; letter-spacing:.12em; text-transform:uppercase; }
+    h1 { font-size:clamp(40px, 5.6vw, 64px); line-height:.96; letter-spacing:-.045em; margin:0 0 14px; font-weight:800; }
+    .lead { font-size:18px; max-width:36rem; margin:0; color:#2c3442; }
+    .actions { display:flex; gap:10px; flex-wrap:wrap; margin-top:20px; }
+    .btn { display:inline-block; text-decoration:none; font-weight:800; padding:13px 16px; border-radius:6px; }
+    .btn-fill { background:var(--navy); color:#fff; }
+    .btn-line { border:1px solid var(--ink); }
+    .shot { margin:0; }
+    .shot img { width:100%; height:430px; object-fit:cover; border-radius:8px; }
+    .shot figcaption { color:var(--muted); font-size:13px; margin-top:8px; }
+    .facts { display:grid; grid-template-columns:repeat(4,1fr); margin:22px 0 8px; border-top:1px solid var(--line); }
+    .facts div { padding:16px 12px 16px 0; }
+    .facts b { display:block; font-size:22px; letter-spacing:-.03em; }
+    .facts span { color:var(--muted); font-size:14px; }
+    section { padding:46px 0; }
+    h2 { font-size:34px; letter-spacing:-.04em; margin:0 0 6px; }
+    .sub { color:var(--muted); margin:0 0 18px; }
+    .work { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    article { background:var(--card); border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+    article img { width:100%; height:230px; object-fit:cover; }
+    article div { padding:18px 18px 20px; }
+    article h3 { margin:0 0 6px; font-size:24px; letter-spacing:-.03em; }
+    article p { margin:0 0 8px; }
     ul { margin:0; padding-left:18px; }
-    li { margin:5px 0; }
-    .note { background:var(--paper); border:1px solid var(--line); padding:12px 14px; margin-top:18px; }
-    .contact { display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:start; }
-    label { display:block; font-size:13px; font-weight:700; margin:10px 0 4px; }
-    input, select, textarea { width:100%; font:inherit; padding:10px; border:1px solid #ccc; background:#fff; }
-    textarea { min-height:80px; }
-    button.btn { cursor:pointer; font:inherit; }
-    footer { border-top:1px solid var(--line); padding:16px; color:var(--muted); font-size:13px; }
+    li { margin:4px 0; }
+    .also { margin-top:16px; color:#2c3442; }
+    .quote { display:grid; grid-template-columns:.85fr 1.15fr; gap:28px; background:var(--navy); color:#f4efe6; border-radius:8px; padding:28px; }
+    .quote p, .quote h2, .quote a { color:#f4efe6; }
+    label { display:block; font-size:13px; font-weight:800; margin:10px 0 4px; }
+    input, select, textarea { width:100%; font:inherit; padding:12px; border:0; border-radius:6px; background:#fff; color:var(--ink); }
+    textarea { min-height:90px; }
+    button { margin-top:12px; background:var(--copper); color:#fff; border:0; font:inherit; font-weight:800; padding:13px 16px; border-radius:6px; cursor:pointer; }
+    footer { padding:8px 0 92px; color:var(--muted); font-size:14px; }
     .dock { display:none; }
-    @media (max-width:700px) {
-      h1 { font-size:26px; }
-      .facts, .cols, .contact { grid-template-columns:1fr; }
-      .facts div + div { border-left:0; border-top:1px solid var(--line); }
-      .phone { display:none; }
-      .dock { display:grid; grid-template-columns:1fr 1fr; position:fixed; left:0; right:0; bottom:0; background:#fff; border-top:1px solid var(--line); }
-      .dock a { text-align:center; padding:14px; font-weight:700; text-decoration:none; }
-      .dock .call { background:var(--blue); color:#fff; }
-      .dock .wa { background:var(--wa); color:#fff; }
-      body { padding-bottom:54px; }
+    @media (max-width:840px) {
+      nav { display:none; }
+      .hero, .work, .quote, .facts { grid-template-columns:1fr; }
+      .shot img, article img { height:230px; }
+      .dock { display:grid; grid-template-columns:1fr 1fr; position:fixed; left:0; right:0; bottom:0; z-index:20; }
+      .dock a { text-align:center; padding:15px; font-weight:800; text-decoration:none; }
+      .dock .c { background:var(--navy); color:#fff; }
+      .dock .w { background:#1f8a4c; color:#fff; }
     }
   </style>
 </head>
 <body>
-  <div class="bar">
-    <span>Open 24 hours, 7 days</span>
-    <span>No call-out fee · Free quotes · All of Gauteng</span>
-  </div>
+  <div class="top"><div class="wrap"><span>Open all night, all week</span><a href="tel:+27792185175">079 218 5175</a></div></div>
   <header>
-    <a class="brand" href="#top">
-      <span class="mark" aria-hidden="true">24/7</span>
-      <div>
-        <b>24/7 Care</b>
-        <span>Electrical and Plumbing</span>
-      </div>
-    </a>
-    <a class="phone" href="tel:+27792185175">079 218 5175</a>
+    <div class="wrap">
+      <a class="logo" href="#top"><b>24/7 Care</b><span>Electrical and plumbing</span></a>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#where">Where</a>
+        <a href="#quote">Quote</a>
+      </nav>
+      <a class="call" href="tel:+27792185175">Call now</a>
+    </div>
   </header>
   <main class="wrap" id="top">
-    <h1>Electricians and plumbers. On call, day and night.</h1>
-    <p class="lead">24/7 Care Electrical and Plumbing does what the name says. We work all day, all night, seven days a week. No call-out fee. Free quotes. No job too big or too small. Based at 13 Gold Street, Florida, Johannesburg, and covering Gauteng.</p>
-    <div class="actions">
-      <a class="btn btn-fill" href="tel:+27792185175">Call 079 218 5175</a>
-      <a class="btn btn-wa" href="https://wa.me/27792185175?text=Hi%20%E2%80%94%20I%20need%20a%20quote.">WhatsApp</a>
+    <div class="hero">
+      <div>
+        <p class="eyebrow">Florida, Johannesburg</p>
+        <h1>Power, hot water, a burst pipe. One call.</h1>
+        <p class="lead">24/7 Care Electrical and Plumbing is open all day and all night. No call-out fee. Free quotes. No job too big or too small. Johannesburg, Pretoria and the rest of Gauteng.</p>
+        <div class="actions">
+          <a class="btn btn-fill" href="tel:+27792185175">Call 079 218 5175</a>
+          <a class="btn btn-line" href="https://wa.me/27792185175?text=Hi%20—%20I%20need%20a%20quote.">WhatsApp a photo</a>
+        </div>
+      </div>
+      <figure class="shot">
+        <img src="board.jpg" alt="Distribution board being checked" />
+        <figcaption>Fault finding, new installs and certificates of compliance.</figcaption>
+      </figure>
     </div>
     <div class="facts">
       <div><b>Since 2015</b><span>Florida, Johannesburg</span></div>
-      <div><b>24 hours</b><span>Including weekends</span></div>
+      <div><b>24 hours</b><span>Seven days</span></div>
       <div><b>No call-out fee</b><span>Quote before the work</span></div>
+      <div><b>20% off</b><span>New installs and repairs, as advertised</span></div>
     </div>
-    <h2>Electrical</h2>
-    <div class="cols">
-      <ul>
-        <li>No power</li>
-        <li>Fault finding</li>
-        <li>New installations</li>
-        <li>Certificate of Compliance</li>
-      </ul>
-      <ul>
-        <li>Power surges and surge arrestors</li>
-        <li>Lights, plugs, converters</li>
-        <li>Stove elements and thermostats</li>
-        <li>Changeover switches and three phase</li>
-      </ul>
-    </div>
-    <h2>Plumbing</h2>
-    <div class="cols">
-      <ul>
-        <li>Burst geysers</li>
-        <li>Geyser elements and thermostats</li>
-        <li>No hot water</li>
-        <li>Burst pipes and main line</li>
-      </ul>
-      <ul>
-        <li>Showers, toilets, basins</li>
-        <li>Pressure valves</li>
-        <li>Leaks</li>
-      </ul>
-    </div>
-    <h2>Also done</h2>
-    <p>Gate motors, electric fencing, clear view fence, waterproofing, roof repairs and house maintenance. 20% off new installations and repairs, as advertised.</p>
-    <div class="note">Send a photo of the board, geyser or leak on WhatsApp. Same number as the call line: 079 218 5175.</div>
-    <h2>Quote</h2>
-    <div class="contact">
-      <div>
-        <p>13 Gold Street, Florida, Johannesburg, 2092.</p>
-        <p>Johannesburg, Pretoria and surrounding Gauteng.</p>
-        <p><a href="tel:+27792185175"><b>079 218 5175</b></a></p>
+    <section id="work">
+      <h2>What we fix</h2>
+      <p class="sub">Electrical and plumbing on the same number, for homes and small businesses.</p>
+      <div class="work">
+        <article>
+          <img src="board.jpg" alt="Open distribution board" />
+          <div>
+            <h3>Electrical</h3>
+            <p>No power, fault finding, new installations and certificates of compliance.</p>
+            <ul>
+              <li>Power surges and surge arrestors</li>
+              <li>Lights, plugs and converters</li>
+              <li>Stove elements and thermostats</li>
+              <li>Changeover switches and three phase</li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <img src="pipes.jpg" alt="Copper pipes fitted to a geyser" />
+          <div>
+            <h3>Plumbing</h3>
+            <p>Burst geysers, no hot water, burst pipes and the main line.</p>
+            <ul>
+              <li>Geyser elements and thermostats</li>
+              <li>Showers, toilets and basins</li>
+              <li>Pressure valves</li>
+              <li>Leaks</li>
+            </ul>
+          </div>
+        </article>
       </div>
-      <form id="quote">
-        <label for="job">Job</label>
-        <select id="job">
-          <option>No power / fault finding</option>
-          <option>Certificate of Compliance</option>
-          <option>Burst geyser or no hot water</option>
-          <option>Burst pipe or leak</option>
-          <option>New installation</option>
-          <option>Gate motor or electric fence</option>
-          <option>Other</option>
-        </select>
-        <label for="area">Area</label>
-        <input id="area" placeholder="Florida, Roodepoort, Pretoria…" />
-        <label for="detail">What happened</label>
-        <textarea id="detail"></textarea>
-        <button class="btn btn-wa" type="submit" style="margin-top:12px">Send on WhatsApp</button>
-      </form>
-    </div>
+      <p class="also">Also gate motors, electric fencing, clear view fence, waterproofing, roof repairs and house maintenance.</p>
+    </section>
+    <section id="where">
+      <h2>Where we work</h2>
+      <p>13 Gold Street, Florida, Johannesburg, 2092. Covering Johannesburg, Pretoria and surrounding Gauteng.</p>
+    </section>
+    <section id="quote">
+      <div class="quote">
+        <div>
+          <h2>Tell us the job.</h2>
+          <p>If it is down right now, call. A photo of the board, geyser or leak is enough.</p>
+          <p><a href="tel:+27792185175"><b>079 218 5175</b></a></p>
+        </div>
+        <form id="quoteform">
+          <label for="job">Job</label>
+          <select id="job">
+            <option>No power / fault finding</option>
+            <option>Certificate of Compliance</option>
+            <option>Burst geyser or no hot water</option>
+            <option>Burst pipe or leak</option>
+            <option>New installation</option>
+            <option>Gate motor or electric fence</option>
+            <option>Other</option>
+          </select>
+          <label for="area">Area</label>
+          <input id="area" placeholder="Florida, Roodepoort, Pretoria" />
+          <label for="detail">What happened</label>
+          <textarea id="detail"></textarea>
+          <button type="submit">Send on WhatsApp</button>
+        </form>
+      </div>
+    </section>
   </main>
-  <footer class="wrap">
-    24/7 Care Electrical and Plumbing · 079 218 5175<br />
-    Sample page prepared by Symmetra. Not the live site.
-  </footer>
+  <footer class="wrap">24/7 Care Electrical and Plumbing · 13 Gold Street, Florida, Johannesburg, 2092 · 079 218 5175 · Open 24 hours</footer>
   <div class="dock">
-    <a class="call" href="tel:+27792185175">Call</a>
-    <a class="wa" href="https://wa.me/27792185175">WhatsApp</a>
+    <a class="c" href="tel:+27792185175">Call</a>
+    <a class="w" href="https://wa.me/27792185175">WhatsApp</a>
   </div>
   <script>
-    document.getElementById("quote").addEventListener("submit", function (e) {
+    document.getElementById("quoteform").addEventListener("submit", function (e) {
       e.preventDefault();
-      var job = document.getElementById("job").value;
-      var area = document.getElementById("area").value || "not given";
-      var detail = document.getElementById("detail").value || "no extra note";
-      var text = "Hi 24/7 Care — quote please.\nJob: " + job + "\nArea: " + area + "\nNote: " + detail;
+      var text = "Hi 24/7 Care — quote please.\nJob: " + document.getElementById("job").value + "\nArea: " + (document.getElementById("area").value || "not given") + "\nNote: " + (document.getElementById("detail").value || "no extra note");
       location.href = "https://wa.me/27792185175?text=" + encodeURIComponent(text);
     });
   </script>
