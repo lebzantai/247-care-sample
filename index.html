@@ -7,71 +7,87 @@
   <meta name="description" content="Electricians and plumbers in Florida, Johannesburg. Open 24 hours. No call-out fee. Free quotes across Gauteng. Call or WhatsApp 079 218 5175." />
   <meta property="og:title" content="24/7 Care Electrical and Plumbing" />
   <meta property="og:description" content="Open all night. No call-out fee. Free quotes. 079 218 5175." />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23172333'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-size='11' fill='%23f4efe6' font-family='Georgia'%3E24%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%230c2340' stroke='%23c4a15a' stroke-width='1.5'/%3E%3Ctext x='16' y='19' text-anchor='middle' font-size='9' fill='%23c4a15a' font-family='Arial'%3E24%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <style>
-    :root { --ink:#172033; --muted:#5c6573; --paper:#f4efe6; --card:#fffdf8; --line:#e6dccb; --copper:#c45c26; --navy:#172033; }
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-    body { margin:0; font:17px/1.5 Manrope, system-ui, sans-serif; color:var(--ink); background:var(--paper); }
-    a { color:inherit; }
-    img { display:block; max-width:100%; }
-    .wrap { width:min(1120px, calc(100% - 32px)); margin:0 auto; }
-    .top { background:var(--navy); color:#f4efe6; font-size:14px; }
-    .top .wrap { display:flex; justify-content:space-between; gap:12px; padding:9px 0; }
-    .top a { color:#fff; font-weight:800; text-decoration:none; }
-    header { position:sticky; top:0; z-index:10; background:rgba(255,253,248,.94); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
-    header .wrap { display:flex; align-items:center; justify-content:space-between; min-height:72px; gap:16px; }
-    .logo { text-decoration:none; }
-    .logo b { font-size:20px; letter-spacing:-.03em; }
-    .logo span { display:block; color:var(--muted); font-size:12px; font-weight:600; }
-    nav { display:flex; gap:18px; font-weight:700; font-size:15px; }
-    nav a { text-decoration:none; }
-    .call { background:var(--copper); color:#fff; text-decoration:none; font-weight:800; padding:11px 14px; border-radius:6px; }
-    .hero { display:grid; grid-template-columns:1.05fr .95fr; gap:40px; align-items:center; padding:42px 0 18px; }
-    .eyebrow { margin:0 0 8px; color:var(--copper); font-weight:800; font-size:12px; letter-spacing:.12em; text-transform:uppercase; }
-    h1 { font-size:clamp(40px, 5.6vw, 64px); line-height:.96; letter-spacing:-.045em; margin:0 0 14px; font-weight:800; }
-    .lead { font-size:18px; max-width:36rem; margin:0; color:#2c3442; }
-    .actions { display:flex; gap:10px; flex-wrap:wrap; margin-top:20px; }
-    .btn { display:inline-block; text-decoration:none; font-weight:800; padding:13px 16px; border-radius:6px; }
-    .btn-fill { background:var(--navy); color:#fff; }
-    .btn-line { border:1px solid var(--ink); }
-    .shot { margin:0; }
-    .shot img { width:100%; height:430px; object-fit:cover; border-radius:8px; }
-    .shot figcaption { color:var(--muted); font-size:13px; margin-top:8px; }
-    .facts { display:grid; grid-template-columns:repeat(4,1fr); margin:22px 0 8px; border-top:1px solid var(--line); }
-    .facts div { padding:16px 12px 16px 0; }
-    .facts b { display:block; font-size:22px; letter-spacing:-.03em; }
-    .facts span { color:var(--muted); font-size:14px; }
-    section { padding:46px 0; }
-    h2 { font-size:34px; letter-spacing:-.04em; margin:0 0 6px; }
-    .sub { color:var(--muted); margin:0 0 18px; }
-    .work { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
-    article { background:var(--card); border:1px solid var(--line); border-radius:8px; overflow:hidden; }
-    article img { width:100%; height:230px; object-fit:cover; }
-    article div { padding:18px 18px 20px; }
-    article h3 { margin:0 0 6px; font-size:24px; letter-spacing:-.03em; }
-    article p { margin:0 0 8px; }
-    ul { margin:0; padding-left:18px; }
-    li { margin:4px 0; }
-    .also { margin-top:16px; color:#2c3442; }
-    .quote { display:grid; grid-template-columns:.85fr 1.15fr; gap:28px; background:var(--navy); color:#f4efe6; border-radius:8px; padding:28px; }
-    .quote p, .quote h2, .quote a { color:#f4efe6; }
-    label { display:block; font-size:13px; font-weight:800; margin:10px 0 4px; }
-    input, select, textarea { width:100%; font:inherit; padding:12px; border:0; border-radius:6px; background:#fff; color:var(--ink); }
-    textarea { min-height:90px; }
-    button { margin-top:12px; background:var(--copper); color:#fff; border:0; font:inherit; font-weight:800; padding:13px 16px; border-radius:6px; cursor:pointer; }
-    footer { padding:8px 0 92px; color:var(--muted); font-size:14px; }
-    .dock { display:none; }
-    @media (max-width:840px) {
-      nav { display:none; }
-      .hero, .work, .quote, .facts { grid-template-columns:1fr; }
-      .shot img, article img { height:230px; }
-      .dock { display:grid; grid-template-columns:1fr 1fr; position:fixed; left:0; right:0; bottom:0; z-index:20; }
-      .dock a { text-align:center; padding:15px; font-weight:800; text-decoration:none; }
-      .dock .c { background:var(--navy); color:#fff; }
-      .dock .w { background:#1f8a4c; color:#fff; }
+    :root {
+      --navy: #0c2340;
+      --navy-2: #16324f;
+      --gold: #c4a15a;
+      --gold-deep: #9a7a38;
+      --ink: #142033;
+      --muted: #5c6774;
+      --paper: #eef1f5;
+      --card: #ffffff;
+      --line: #d7dee7;
+      --wa: #128c7e;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font: 17px/1.5 Manrope, system-ui, sans-serif; color: var(--ink); background: var(--paper); }
+    a { color: inherit; }
+    img { display: block; max-width: 100%; }
+    .wrap { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
+    .top { background: var(--navy); color: #f4efe4; font-size: 14px; }
+    .top .wrap { display: flex; justify-content: space-between; gap: 12px; padding: 9px 0; }
+    .top a { color: var(--gold); font-weight: 800; text-decoration: none; }
+    header { position: sticky; top: 0; z-index: 10; background: #fff; border-bottom: 3px solid var(--gold); }
+    header .wrap { display: flex; align-items: center; justify-content: space-between; min-height: 76px; gap: 16px; }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .brand .mark { width: 52px; height: 52px; flex: none; }
+    .brand b { display: block; font-size: 18px; letter-spacing: -.02em; color: var(--navy); }
+    .brand span { display: block; color: var(--muted); font-size: 12px; font-weight: 600; }
+    nav { display: flex; gap: 18px; font-weight: 700; font-size: 15px; }
+    nav a { text-decoration: none; color: var(--navy); }
+    .call { background: var(--navy); color: #fff; text-decoration: none; font-weight: 800; padding: 11px 14px; border-radius: 4px; border-bottom: 3px solid var(--gold); }
+    .hero { display: grid; grid-template-columns: 1.05fr .95fr; gap: 40px; align-items: center; padding: 42px 0 18px; }
+    .eyebrow { margin: 0 0 8px; color: var(--gold-deep); font-weight: 800; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { font-size: clamp(40px, 5.6vw, 64px); line-height: .96; letter-spacing: -.045em; margin: 0 0 14px; font-weight: 800; color: var(--navy); }
+    .lead { font-size: 18px; max-width: 36rem; margin: 0; color: #243044; }
+    .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
+    .btn { display: inline-block; text-decoration: none; font-weight: 800; padding: 13px 16px; border-radius: 4px; }
+    .btn-fill { background: var(--navy); color: #fff; border-bottom: 3px solid var(--gold); }
+    .btn-line { border: 1px solid var(--navy); color: var(--navy); background: #fff; }
+    .btn-wa { background: var(--wa); color: #fff; }
+    .shot { margin: 0; }
+    .shot img { width: 100%; height: 430px; object-fit: cover; border-radius: 4px; border: 1px solid var(--line); }
+    .shot figcaption { color: var(--muted); font-size: 13px; margin-top: 8px; }
+    .facts { display: grid; grid-template-columns: repeat(4, 1fr); margin: 22px 0 8px; background: #fff; border: 1px solid var(--line); border-top: 3px solid var(--navy); }
+    .facts div { padding: 16px 14px; }
+    .facts div + div { border-left: 1px solid var(--line); }
+    .facts b { display: block; font-size: 22px; letter-spacing: -.03em; color: var(--navy); }
+    .facts span { color: var(--muted); font-size: 14px; }
+    section { padding: 46px 0; }
+    h2 { font-size: 34px; letter-spacing: -.04em; margin: 0 0 6px; color: var(--navy); }
+    .sub { color: var(--muted); margin: 0 0 18px; }
+    .work { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    article { background: var(--card); border: 1px solid var(--line); border-radius: 4px; overflow: hidden; border-top: 3px solid var(--gold); }
+    article img { width: 100%; height: 230px; object-fit: cover; }
+    article div { padding: 18px 18px 20px; }
+    article h3 { margin: 0 0 6px; font-size: 24px; letter-spacing: -.03em; color: var(--navy); }
+    article p { margin: 0 0 8px; }
+    ul { margin: 0; padding-left: 18px; }
+    li { margin: 4px 0; }
+    .also { margin-top: 16px; color: #243044; }
+    .quote { display: grid; grid-template-columns: .85fr 1.15fr; gap: 28px; background: var(--navy); color: #f4efe4; border-radius: 4px; padding: 28px; border-top: 4px solid var(--gold); }
+    .quote p, .quote h2, .quote a { color: #f4efe4; }
+    .quote a { color: var(--gold); }
+    label { display: block; font-size: 13px; font-weight: 800; margin: 10px 0 4px; color: #f4efe4; }
+    input, select, textarea { width: 100%; font: inherit; padding: 12px; border: 0; border-radius: 4px; background: #fff; color: var(--ink); }
+    textarea { min-height: 90px; }
+    button { margin-top: 12px; background: var(--gold); color: var(--navy); border: 0; font: inherit; font-weight: 800; padding: 13px 16px; border-radius: 4px; cursor: pointer; }
+    footer { padding: 8px 0 92px; color: var(--muted); font-size: 14px; }
+    .dock { display: none; }
+    @media (max-width: 840px) {
+      nav { display: none; }
+      .hero, .work, .quote, .facts { grid-template-columns: 1fr; }
+      .facts div + div { border-left: 0; border-top: 1px solid var(--line); }
+      .shot img, article img { height: 230px; }
+      .dock { display: grid; grid-template-columns: 1fr 1fr; position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; }
+      .dock a { text-align: center; padding: 15px; font-weight: 800; text-decoration: none; }
+      .dock .c { background: var(--navy); color: #fff; }
+      .dock .w { background: var(--wa); color: #fff; }
     }
   </style>
 </head>
@@ -79,7 +95,10 @@
   <div class="top"><div class="wrap"><span>Open all night, all week</span><a href="tel:+27792185175">079 218 5175</a></div></div>
   <header>
     <div class="wrap">
-      <a class="logo" href="#top"><b>24/7 Care</b><span>Electrical and plumbing</span></a>
+      <a class="brand" href="#top">
+        <svg class="mark" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="37" fill="#0c2340" stroke="#c4a15a" stroke-width="2.2"/><text x="40" y="32" text-anchor="middle" font-size="16" font-weight="800" fill="#c4a15a" font-family="Manrope,Arial">24/7</text><text x="40" y="48" text-anchor="middle" font-size="13" font-weight="800" fill="#f4efe4" font-family="Manrope,Arial" letter-spacing="1">CARE</text><text x="40" y="62" text-anchor="middle" font-size="5.2" fill="#c4a15a" font-family="Manrope,Arial">ELECTRICAL & PLUMBING</text></svg>
+        <span><b>24/7 Care</b>Electrical and plumbing</span>
+      </a>
       <nav>
         <a href="#work">Work</a>
         <a href="#where">Where</a>
@@ -96,7 +115,7 @@
         <p class="lead">24/7 Care Electrical and Plumbing is open all day and all night. No call-out fee. Free quotes. No job too big or too small. Johannesburg, Pretoria and the rest of Gauteng.</p>
         <div class="actions">
           <a class="btn btn-fill" href="tel:+27792185175">Call 079 218 5175</a>
-          <a class="btn btn-line" href="https://wa.me/27792185175?text=Hi%20—%20I%20need%20a%20quote.">WhatsApp a photo</a>
+          <a class="btn btn-wa" href="https://wa.me/27792185175?text=Hi%20%E2%80%94%20I%20need%20a%20quote.">WhatsApp a photo</a>
         </div>
       </div>
       <figure class="shot">
@@ -182,7 +201,7 @@
   <script>
     document.getElementById("quoteform").addEventListener("submit", function (e) {
       e.preventDefault();
-      var text = "Hi 24/7 Care — quote please.\nJob: " + document.getElementById("job").value + "\nArea: " + (document.getElementById("area").value || "not given") + "\nNote: " + (document.getElementById("detail").value || "no extra note");
+      var text = "Hi 24/7 Care \u2014 quote please.\nJob: " + document.getElementById("job").value + "\nArea: " + (document.getElementById("area").value || "not given") + "\nNote: " + (document.getElementById("detail").value || "no extra note");
       location.href = "https://wa.me/27792185175?text=" + encodeURIComponent(text);
     });
   </script>
