@@ -25,13 +25,14 @@
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body { margin: 0; font: 17px/1.5 Manrope, system-ui, sans-serif; color: var(--ink); background: var(--paper); }
+    body { margin: 0; font: 17px/1.55 Manrope, system-ui, sans-serif; color: var(--ink); background: var(--paper); }
     a { color: inherit; }
     img { display: block; max-width: 100%; }
     .wrap { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
     .top { background: var(--navy); color: #f4efe4; font-size: 14px; }
-    .top .wrap { display: flex; justify-content: space-between; gap: 12px; padding: 9px 0; flex-wrap: wrap; }
-    .top a { color: var(--gold); font-weight: 800; text-decoration: none; }
+    .top .wrap { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 0; flex-wrap: wrap; }
+    .top a { color: var(--gold); font-weight: 800; text-decoration: none; transition: opacity .15s; }
+    .top a:hover { opacity: .85; }
     header { position: sticky; top: 0; z-index: 10; background: #fff; border-bottom: 3px solid var(--gold); }
     header .wrap { display: flex; align-items: center; justify-content: space-between; min-height: 76px; gap: 16px; }
     .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
@@ -39,52 +40,62 @@
     .brand b { display: block; font-size: 18px; letter-spacing: -.02em; color: var(--navy); }
     .brand span { display: block; color: var(--muted); font-size: 12px; font-weight: 600; }
     nav { display: flex; gap: 18px; font-weight: 700; font-size: 15px; }
-    nav a { text-decoration: none; color: var(--navy); }
-    .call { background: var(--navy); color: #fff; text-decoration: none; font-weight: 800; padding: 11px 14px; border-radius: 4px; border-bottom: 3px solid var(--gold); }
-    .hero { display: grid; grid-template-columns: 1.05fr .95fr; gap: 40px; align-items: center; padding: 42px 0 18px; }
+    nav a { text-decoration: none; color: var(--navy); transition: color .15s; }
+    nav a:hover { color: var(--gold-deep); }
+    .call { background: var(--navy); color: #fff; text-decoration: none; font-weight: 800; padding: 11px 14px; border-radius: 4px; border-bottom: 3px solid var(--gold); transition: transform .1s, background .15s; }
+    .call:hover { background: var(--navy-2); transform: translateY(-1px); }
+    .hero { display: grid; grid-template-columns: 1.05fr .95fr; gap: 40px; align-items: center; padding: 48px 0 20px; }
     .eyebrow { margin: 0 0 8px; color: var(--gold-deep); font-weight: 800; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
-    h1 { font-size: clamp(40px, 5.6vw, 64px); line-height: .96; letter-spacing: -.045em; margin: 0 0 14px; font-weight: 800; color: var(--navy); }
+    h1 { font-size: clamp(40px, 5.6vw, 64px); line-height: .96; letter-spacing: -.045em; margin: 0 0 12px; font-weight: 800; color: var(--navy); }
     .lead { font-size: 18px; max-width: 36rem; margin: 0; color: #243044; }
-    .slogan { font-weight: 800; color: var(--navy); margin: 8px 0 12px; font-size: 16px; }
-    .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
-    .btn { display: inline-block; text-decoration: none; font-weight: 800; padding: 13px 16px; border-radius: 4px; }
+    .slogan { font-weight: 800; color: var(--navy); margin: 6px 0 14px; font-size: 16.5px; }
+    .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 22px; }
+    .btn { display: inline-block; text-decoration: none; font-weight: 800; padding: 13px 16px; border-radius: 4px; transition: transform .1s, background .15s, border-color .15s; }
+    .btn:hover { transform: translateY(-1px); }
     .btn-fill { background: var(--navy); color: #fff; border-bottom: 3px solid var(--gold); }
+    .btn-fill:hover { background: var(--navy-2); }
     .btn-line { border: 1px solid var(--navy); color: var(--navy); background: #fff; }
+    .btn-line:hover { background: #f8f9fb; }
     .btn-wa { background: var(--wa); color: #fff; }
+    .btn-wa:hover { background: #0e7a6d; }
     .shot { margin: 0; }
     .shot img { width: 100%; height: 430px; object-fit: cover; border-radius: 4px; border: 1px solid var(--line); }
     .shot figcaption { color: var(--muted); font-size: 13px; margin-top: 8px; }
-    .facts { display: grid; grid-template-columns: repeat(4, 1fr); margin: 22px 0 8px; background: #fff; border: 1px solid var(--line); border-top: 3px solid var(--navy); }
-    .facts div { padding: 16px 14px; }
+    .facts { display: grid; grid-template-columns: repeat(4, 1fr); margin: 28px 0 10px; background: #fff; border: 1px solid var(--line); border-top: 3px solid var(--navy); }
+    .facts div { padding: 18px 16px; }
     .facts div + div { border-left: 1px solid var(--line); }
     .facts b { display: block; font-size: 22px; letter-spacing: -.03em; color: var(--navy); }
     .facts span { color: var(--muted); font-size: 14px; }
-    section { padding: 46px 0; }
-    h2 { font-size: 34px; letter-spacing: -.04em; margin: 0 0 6px; color: var(--navy); }
-    .sub { color: var(--muted); margin: 0 0 18px; }
-    .work { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-    article { background: var(--card); border: 1px solid var(--line); border-radius: 4px; overflow: hidden; border-top: 3px solid var(--gold); }
+    section { padding: 52px 0; }
+    h2 { font-size: 34px; letter-spacing: -.04em; margin: 0 0 8px; color: var(--navy); }
+    .sub { color: var(--muted); margin: 0 0 20px; }
+    .work { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    article { background: var(--card); border: 1px solid var(--line); border-radius: 4px; overflow: hidden; border-top: 3px solid var(--gold); transition: box-shadow .15s; }
+    article:hover { box-shadow: 0 4px 16px rgba(12,35,64,.08); }
     article img { width: 100%; height: 230px; object-fit: cover; }
-    article div { padding: 18px 18px 20px; }
-    article h3 { margin: 0 0 6px; font-size: 24px; letter-spacing: -.03em; color: var(--navy); }
-    article p { margin: 0 0 8px; }
+    article div { padding: 20px 20px 22px; }
+    article h3 { margin: 0 0 8px; font-size: 24px; letter-spacing: -.03em; color: var(--navy); }
+    article p { margin: 0 0 10px; }
     ul { margin: 0; padding-left: 18px; }
-    li { margin: 4px 0; }
-    .also { margin-top: 16px; color: #243044; }
-    .quote { display: grid; grid-template-columns: .85fr 1.15fr; gap: 28px; background: var(--navy); color: #f4efe4; border-radius: 4px; padding: 28px; border-top: 4px solid var(--gold); }
+    li { margin: 5px 0; }
+    .also { margin-top: 18px; color: #243044; }
+    .quote { display: grid; grid-template-columns: .85fr 1.15fr; gap: 28px; background: var(--navy); color: #f4efe4; border-radius: 4px; padding: 32px; border-top: 4px solid var(--gold); }
     .quote p, .quote h2, .quote a { color: #f4efe4; }
-    .quote a { color: var(--gold); }
-    label { display: block; font-size: 13px; font-weight: 800; margin: 10px 0 4px; color: #f4efe4; }
+    .quote a { color: var(--gold); text-decoration: none; }
+    .quote a:hover { text-decoration: underline; }
+    label { display: block; font-size: 13px; font-weight: 800; margin: 12px 0 5px; color: #f4efe4; }
     input, select, textarea { width: 100%; font: inherit; padding: 12px; border: 0; border-radius: 4px; background: #fff; color: var(--ink); }
-    textarea { min-height: 90px; }
-    button { margin-top: 12px; background: var(--gold); color: var(--navy); border: 0; font: inherit; font-weight: 800; padding: 13px 16px; border-radius: 4px; cursor: pointer; }
-    footer { padding: 8px 0 92px; color: var(--muted); font-size: 14px; }
+    textarea { min-height: 96px; }
+    button { margin-top: 14px; background: var(--gold); color: var(--navy); border: 0; font: inherit; font-weight: 800; padding: 13px 16px; border-radius: 4px; cursor: pointer; transition: background .15s, transform .1s; }
+    button:hover { background: #d4b36a; transform: translateY(-1px); }
+    footer { padding: 16px 0 100px; color: var(--muted); font-size: 14px; line-height: 1.6; }
     .dock { display: none; }
     @media (max-width: 840px) {
       nav { display: none; }
       .hero, .work, .quote, .facts { grid-template-columns: 1fr; }
       .facts div + div { border-left: 0; border-top: 1px solid var(--line); }
       .shot img, article img { height: 230px; }
+      .top .wrap { flex-direction: column; align-items: flex-start; gap: 6px; }
       .dock { display: grid; grid-template-columns: 1fr 1fr; position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; }
       .dock a { text-align: center; padding: 15px; font-weight: 800; text-decoration: none; }
       .dock .c { background: var(--navy); color: #fff; }
