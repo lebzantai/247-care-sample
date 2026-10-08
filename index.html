@@ -7,28 +7,30 @@
   <meta name="description" content="Electricians and plumbers in Sophiatown, Johannesburg. Open 24 hours. No call-out fee. Free quotes across Gauteng. Call 071 231 1207 or 079 218 5175." />
   <meta property="og:title" content="24/7 CARE Electrical and Plumbing" />
   <meta property="og:description" content="We Don't Just Fix it — We CARE 24/7" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230c2340'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-size='11' font-weight='700' fill='%23c4a15a' font-family='system-ui'%3E24%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a1f3d'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-size='11' font-weight='700' fill='%23c9a227' font-family='system-ui'%3E24%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --navy: #0a1f3d;
-      --navy-mid: #143058;
-      --gold: #c9a227;
-      --gold-soft: #e8d5a3;
-      --ink: #1a1a1a;
-      --muted: #5a6570;
-      --bg: #f7f8fa;
+      --navy: #0b1f3a;
+      --navy-soft: #152a4a;
+      --gold: #b8922a;
+      --gold-light: #f3ead3;
+      --ink: #1c1c1c;
+      --muted: #5e6a75;
+      --bg: #f5f6f8;
       --white: #ffffff;
-      --border: #e4e7ec;
-      --wa: #25d366;
+      --border: #e8eaef;
+      --shadow: 0 2px 8px rgba(11,31,58,.06);
+      --shadow-lg: 0 12px 40px rgba(11,31,58,.1);
+      --wa: #1da851;
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body { margin: 0; font: 16px/1.6 Manrope, system-ui, sans-serif; color: var(--ink); background: var(--bg); }
+    body { margin: 0; font: 16px/1.65 Manrope, system-ui, sans-serif; color: var(--ink); background: var(--bg); }
     a { color: inherit; text-decoration: none; }
     img { display: block; max-width: 100%; }
-    .wrap { width: min(1080px, calc(100% - 40px)); margin: 0 auto; }
+    .wrap { width: min(1060px, calc(100% - 48px)); margin: 0 auto; }
 
     .topbar {
       background: var(--navy);
@@ -40,12 +42,12 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 0;
+      padding: 11px 0;
       gap: 16px;
       flex-wrap: wrap;
     }
-    .topbar .slogan { color: var(--gold-soft); letter-spacing: .02em; }
-    .topbar .phones a { color: var(--gold); margin-left: 14px; }
+    .topbar .slogan { color: var(--gold-light); letter-spacing: .01em; }
+    .topbar .phones a { color: var(--gold); margin-left: 16px; transition: color .15s; }
     .topbar .phones a:hover { color: #fff; }
 
     header {
@@ -59,16 +61,12 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      height: 72px;
+      height: 74px;
     }
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
+    .logo { display: flex; align-items: center; gap: 12px; }
     .logo-mark {
-      width: 48px;
-      height: 48px;
+      width: 46px;
+      height: 46px;
       background: var(--navy);
       border-radius: 10px;
       display: flex;
@@ -76,13 +74,14 @@
       justify-content: center;
       color: var(--gold);
       font-weight: 800;
-      font-size: 14px;
-      letter-spacing: -.02em;
+      font-size: 13px;
+      letter-spacing: -.01em;
+      box-shadow: 0 2px 6px rgba(11,31,58,.15);
     }
-    .logo-text b { display: block; font-size: 17px; color: var(--navy); letter-spacing: -.02em; }
+    .logo-text b { display: block; font-size: 17px; color: var(--navy); letter-spacing: -.02em; line-height: 1.1; }
     .logo-text span { font-size: 12px; color: var(--muted); font-weight: 600; }
-    nav { display: flex; gap: 28px; font-weight: 600; font-size: 15px; }
-    nav a { color: var(--navy); }
+    nav { display: flex; gap: 32px; font-weight: 600; font-size: 15px; }
+    nav a { color: var(--navy); transition: color .15s; }
     nav a:hover { color: var(--gold); }
     .btn-call {
       background: var(--navy);
@@ -91,155 +90,166 @@
       border-radius: 8px;
       font-weight: 700;
       font-size: 14px;
+      transition: background .15s;
     }
-    .btn-call:hover { background: var(--navy-mid); }
+    .btn-call:hover { background: var(--navy-soft); }
 
     .hero {
-      padding: 64px 0 48px;
+      padding: 72px 0 40px;
       display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 48px;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 56px;
       align-items: center;
     }
     .hero-eyebrow {
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 700;
       color: var(--gold);
-      letter-spacing: .08em;
+      letter-spacing: .1em;
       text-transform: uppercase;
-      margin: 0 0 12px;
+      margin: 0 0 14px;
     }
     .hero h1 {
-      font-size: clamp(36px, 5vw, 52px);
-      line-height: 1.05;
-      letter-spacing: -.03em;
-      margin: 0 0 16px;
+      font-size: clamp(34px, 4.8vw, 48px);
+      line-height: 1.08;
+      letter-spacing: -.025em;
+      margin: 0 0 14px;
       color: var(--navy);
       font-weight: 800;
     }
     .hero-slogan {
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 700;
       color: var(--navy);
-      margin: 0 0 16px;
+      margin: 0 0 14px;
     }
     .hero-lead {
-      font-size: 17px;
+      font-size: 16.5px;
       color: var(--muted);
-      margin: 0 0 28px;
-      max-width: 440px;
+      margin: 0 0 30px;
+      max-width: 420px;
+      line-height: 1.6;
     }
-    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .hero-actions { display: flex; gap: 10px; flex-wrap: wrap; }
     .btn {
       display: inline-flex;
       align-items: center;
-      padding: 14px 20px;
+      justify-content: center;
+      padding: 13px 20px;
       border-radius: 8px;
       font-weight: 700;
-      font-size: 15px;
-      transition: all .15s;
+      font-size: 14.5px;
+      transition: all .15s ease;
     }
     .btn-primary { background: var(--navy); color: #fff; }
-    .btn-primary:hover { background: var(--navy-mid); transform: translateY(-1px); }
+    .btn-primary:hover { background: var(--navy-soft); transform: translateY(-1px); }
     .btn-secondary { background: var(--white); color: var(--navy); border: 1.5px solid var(--border); }
-    .btn-secondary:hover { border-color: var(--navy); }
+    .btn-secondary:hover { border-color: var(--navy); background: #fafbfc; }
     .btn-wa { background: var(--wa); color: #fff; }
-    .btn-wa:hover { background: #1da851; transform: translateY(-1px); }
+    .btn-wa:hover { background: #189a48; transform: translateY(-1px); }
     .hero-img {
-      border-radius: 12px;
+      border-radius: 14px;
       overflow: hidden;
-      box-shadow: 0 8px 32px rgba(10,31,61,.12);
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border);
     }
-    .hero-img img { width: 100%; height: 380px; object-fit: cover; }
+    .hero-img img { width: 100%; height: 360px; object-fit: cover; }
 
     .stats {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
-      margin: 8px 0 48px;
+      gap: 14px;
+      margin: 16px 0 56px;
     }
     .stat {
       background: var(--white);
       border: 1px solid var(--border);
       border-radius: 10px;
-      padding: 20px 16px;
+      padding: 22px 14px;
       text-align: center;
+      box-shadow: var(--shadow);
     }
-    .stat b { display: block; font-size: 20px; color: var(--navy); font-weight: 800; letter-spacing: -.02em; }
-    .stat span { font-size: 13px; color: var(--muted); }
+    .stat b { display: block; font-size: 19px; color: var(--navy); font-weight: 800; letter-spacing: -.02em; margin-bottom: 2px; }
+    .stat span { font-size: 12.5px; color: var(--muted); }
 
-    section { padding: 56px 0; }
-    .section-head { margin-bottom: 28px; }
+    section { padding: 48px 0; }
+    .section-head { margin-bottom: 26px; }
     .section-head h2 {
-      font-size: 32px;
-      letter-spacing: -.03em;
-      margin: 0 0 8px;
+      font-size: 30px;
+      letter-spacing: -.025em;
+      margin: 0 0 6px;
       color: var(--navy);
       font-weight: 800;
     }
-    .section-head p { margin: 0; color: var(--muted); font-size: 16px; }
+    .section-head p { margin: 0; color: var(--muted); font-size: 15.5px; }
 
-    .services { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .services { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
     .service {
       background: var(--white);
       border-radius: 12px;
       overflow: hidden;
       border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      transition: box-shadow .2s;
     }
-    .service img { width: 100%; height: 200px; object-fit: cover; }
-    .service-body { padding: 24px; }
-    .service h3 { margin: 0 0 8px; font-size: 22px; color: var(--navy); font-weight: 800; }
-    .service p { margin: 0 0 14px; color: var(--muted); }
+    .service:hover { box-shadow: 0 6px 20px rgba(11,31,58,.1); }
+    .service img { width: 100%; height: 190px; object-fit: cover; }
+    .service-body { padding: 22px 22px 24px; }
+    .service h3 { margin: 0 0 6px; font-size: 20px; color: var(--navy); font-weight: 800; }
+    .service p { margin: 0 0 12px; color: var(--muted); font-size: 14.5px; }
     .service ul { margin: 0; padding: 0; list-style: none; }
     .service li {
-      padding: 6px 0 6px 20px;
+      padding: 5px 0 5px 16px;
       position: relative;
       color: var(--ink);
-      font-size: 15px;
+      font-size: 14.5px;
     }
     .service li::before {
       content: "";
       position: absolute;
       left: 0;
-      top: 12px;
-      width: 6px;
-      height: 6px;
+      top: 11px;
+      width: 5px;
+      height: 5px;
       background: var(--gold);
       border-radius: 50%;
     }
     .also-services {
-      margin-top: 24px;
-      padding: 18px 20px;
+      margin-top: 18px;
+      padding: 16px 20px;
       background: var(--white);
       border-radius: 10px;
       border: 1px solid var(--border);
       color: var(--muted);
-      font-size: 15px;
+      font-size: 14.5px;
+      box-shadow: var(--shadow);
     }
 
     .location-box {
       background: var(--white);
       border: 1px solid var(--border);
       border-radius: 12px;
-      padding: 28px;
+      padding: 28px 30px;
+      box-shadow: var(--shadow);
     }
-    .location-box h2 { margin: 0 0 8px; font-size: 28px; color: var(--navy); font-weight: 800; }
-    .location-box p { margin: 0; color: var(--muted); font-size: 16px; }
+    .location-box h2 { margin: 0 0 6px; font-size: 26px; color: var(--navy); font-weight: 800; letter-spacing: -.02em; }
+    .location-box p { margin: 0; color: var(--muted); font-size: 15.5px; }
 
     .quote-section {
-      background: var(--navy);
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-soft) 100%);
       border-radius: 16px;
-      padding: 40px;
+      padding: 42px;
       display: grid;
-      grid-template-columns: 1fr 1.1fr;
-      gap: 40px;
+      grid-template-columns: 1fr 1.05fr;
+      gap: 44px;
       color: #fff;
+      box-shadow: var(--shadow-lg);
     }
-    .quote-section h2 { margin: 0 0 12px; font-size: 28px; font-weight: 800; }
-    .quote-section p { margin: 0 0 16px; color: #c5d0de; }
-    .quote-contacts a { color: var(--gold); font-weight: 700; display: inline-block; margin-right: 16px; }
+    .quote-section h2 { margin: 0 0 10px; font-size: 26px; font-weight: 800; letter-spacing: -.02em; }
+    .quote-section p { margin: 0 0 18px; color: #c8d4e4; font-size: 15px; }
+    .quote-contacts a { color: var(--gold-light); font-weight: 700; display: inline-block; margin-right: 18px; font-size: 15px; transition: color .15s; }
     .quote-contacts a:hover { color: #fff; }
-    .quote-form label { display: block; font-size: 13px; font-weight: 700; margin: 14px 0 6px; color: #c5d0de; }
+    .quote-form label { display: block; font-size: 12.5px; font-weight: 700; margin: 14px 0 6px; color: #c8d4e4; letter-spacing: .02em; }
     .quote-form input,
     .quote-form select,
     .quote-form textarea {
@@ -250,26 +260,29 @@
       font: inherit;
       background: #fff;
       color: var(--ink);
+      box-shadow: inset 0 1px 2px rgba(0,0,0,.04);
     }
-    .quote-form textarea { min-height: 90px; resize: vertical; }
+    .quote-form textarea { min-height: 88px; resize: vertical; }
     .quote-form button {
       margin-top: 16px;
       background: var(--gold);
       color: var(--navy);
       border: 0;
-      padding: 14px 24px;
+      padding: 13px 22px;
       border-radius: 8px;
       font: inherit;
       font-weight: 800;
       cursor: pointer;
+      transition: background .15s;
     }
-    .quote-form button:hover { background: #d4b13a; }
+    .quote-form button:hover { background: #c9a234; }
 
     footer {
-      padding: 32px 0 100px;
+      padding: 28px 0 110px;
       text-align: center;
       color: var(--muted);
-      font-size: 14px;
+      font-size: 13.5px;
+      line-height: 1.7;
     }
 
     .mobile-dock {
@@ -283,9 +296,10 @@
     .mobile-dock a {
       flex: 1;
       text-align: center;
-      padding: 16px;
+      padding: 15px;
       font-weight: 700;
       color: #fff;
+      font-size: 15px;
     }
     .mobile-dock .call { background: var(--navy); }
     .mobile-dock .wa { background: var(--wa); }
@@ -293,10 +307,11 @@
     @media (max-width: 800px) {
       nav, .btn-call { display: none; }
       .hero, .services, .quote-section, .stats { grid-template-columns: 1fr; }
-      .hero { padding: 40px 0 32px; gap: 28px; }
-      .hero-img img { height: 240px; }
+      .hero { padding: 40px 0 28px; gap: 28px; }
+      .hero-img img { height: 220px; }
       .mobile-dock { display: flex; }
       .topbar .wrap { flex-direction: column; align-items: flex-start; gap: 4px; }
+      .quote-section { padding: 28px 22px; }
     }
   </style>
 </head>
