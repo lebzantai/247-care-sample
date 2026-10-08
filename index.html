@@ -3,460 +3,386 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>24/7 CARE Electrical and Plumbing | Sophiatown, Johannesburg</title>
-  <meta name="description" content="Electricians and plumbers in Sophiatown, Johannesburg. Open 24 hours. No call-out fee. Free quotes across Gauteng. Call 071 231 1207 or 079 218 5175." />
-  <meta property="og:title" content="24/7 CARE Electrical and Plumbing" />
-  <meta property="og:description" content="We Don't Just Fix it — We CARE 24/7" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a1f3d'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-size='11' font-weight='700' fill='%23c9a227' font-family='system-ui'%3E24%3C/text%3E%3C/svg%3E" />
+  <title>24/7 CARE Electrical & Plumbing | Emergency Electrician & Plumber Johannesburg</title>
+  <meta name="description" content="Emergency electrician and plumber in Sophiatown, Johannesburg. No call-out fee. Free quotes. Burst geyser, no power, leaks. Call 079 218 5175 or WhatsApp now. Open 24/7." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://247-care-sample.vercel.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="24/7 CARE Electrical & Plumbing | Emergency Service Johannesburg" />
+  <meta property="og:description" content="We Don't Just Fix it — We CARE 24/7. Emergency electrical and plumbing. Call 079 218 5175." />
+  <meta property="og:url" content="https://247-care-sample.vercel.app/" />
+  <meta property="og:image" content="https://247-care-sample.vercel.app/og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230a1a33'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-size='12' font-weight='800' fill='%23ffcc00' font-family='system-ui'%3E24%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --navy: #0b1f3a;
-      --navy-soft: #152a4a;
-      --gold: #b8922a;
-      --gold-light: #f3ead3;
-      --ink: #1c1c1c;
-      --muted: #5e6a75;
-      --bg: #f5f6f8;
-      --white: #ffffff;
-      --border: #e8eaef;
-      --shadow: 0 2px 8px rgba(11,31,58,.06);
-      --shadow-lg: 0 12px 40px rgba(11,31,58,.1);
-      --wa: #1da851;
+      --navy: #0a1a33;
+      --navy-2: #142a4a;
+      --yellow: #ffcc00;
+      --yellow-dark: #e6b800;
+      --ink: #1a1a1a;
+      --muted: #4a5568;
+      --bg: #f4f6f8;
+      --white: #fff;
+      --border: #e2e8f0;
+      --wa: #25d366;
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body { margin: 0; font: 16px/1.65 Manrope, system-ui, sans-serif; color: var(--ink); background: var(--bg); }
+    body { margin: 0; font: 16px/1.55 Manrope, system-ui, -apple-system, sans-serif; color: var(--ink); background: var(--bg); }
     a { color: inherit; text-decoration: none; }
-    img { display: block; max-width: 100%; }
-    .wrap { width: min(1060px, calc(100% - 48px)); margin: 0 auto; }
-
-    .topbar {
-      background: var(--navy);
-      color: #fff;
-      font-size: 13px;
-      font-weight: 600;
-    }
-    .topbar .wrap {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 11px 0;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-    .topbar .slogan { color: var(--gold-light); letter-spacing: .01em; }
-    .topbar .phones a { color: var(--gold); margin-left: 16px; transition: color .15s; }
-    .topbar .phones a:hover { color: #fff; }
-
-    header {
-      background: var(--white);
-      border-bottom: 1px solid var(--border);
-      position: sticky;
-      top: 0;
-      z-index: 50;
-    }
-    header .wrap {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 74px;
-    }
-    .logo { display: flex; align-items: center; gap: 12px; }
-    .logo-mark {
-      width: 46px;
-      height: 46px;
-      background: var(--navy);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--gold);
-      font-weight: 800;
-      font-size: 13px;
-      letter-spacing: -.01em;
-      box-shadow: 0 2px 6px rgba(11,31,58,.15);
-    }
-    .logo-text b { display: block; font-size: 17px; color: var(--navy); letter-spacing: -.02em; line-height: 1.1; }
-    .logo-text span { font-size: 12px; color: var(--muted); font-weight: 600; }
-    nav { display: flex; gap: 32px; font-weight: 600; font-size: 15px; }
-    nav a { color: var(--navy); transition: color .15s; }
-    nav a:hover { color: var(--gold); }
-    .btn-call {
-      background: var(--navy);
-      color: #fff;
-      padding: 10px 18px;
-      border-radius: 8px;
-      font-weight: 700;
-      font-size: 14px;
-      transition: background .15s;
-    }
-    .btn-call:hover { background: var(--navy-soft); }
-
-    .hero {
-      padding: 72px 0 40px;
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 56px;
-      align-items: center;
-    }
-    .hero-eyebrow {
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--gold);
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      margin: 0 0 14px;
-    }
-    .hero h1 {
-      font-size: clamp(34px, 4.8vw, 48px);
-      line-height: 1.08;
-      letter-spacing: -.025em;
-      margin: 0 0 14px;
-      color: var(--navy);
-      font-weight: 800;
-    }
-    .hero-slogan {
-      font-size: 17px;
-      font-weight: 700;
-      color: var(--navy);
-      margin: 0 0 14px;
-    }
-    .hero-lead {
-      font-size: 16.5px;
-      color: var(--muted);
-      margin: 0 0 30px;
-      max-width: 420px;
-      line-height: 1.6;
-    }
-    .hero-actions { display: flex; gap: 10px; flex-wrap: wrap; }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 13px 20px;
-      border-radius: 8px;
-      font-weight: 700;
-      font-size: 14.5px;
-      transition: all .15s ease;
-    }
-    .btn-primary { background: var(--navy); color: #fff; }
-    .btn-primary:hover { background: var(--navy-soft); transform: translateY(-1px); }
-    .btn-secondary { background: var(--white); color: var(--navy); border: 1.5px solid var(--border); }
-    .btn-secondary:hover { border-color: var(--navy); background: #fafbfc; }
+    img { display: block; max-width: 100%; height: auto; }
+    .wrap { width: min(1080px, calc(100% - 32px)); margin: 0 auto; }
+    .top { background: var(--navy); color: #fff; font-size: 14px; font-weight: 700; }
+    .top .wrap { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; gap: 12px; flex-wrap: wrap; }
+    .top .slogan { color: var(--yellow); }
+    .top a { color: #fff; }
+    header { background: var(--white); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 40; }
+    header .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .logo { display: flex; align-items: center; gap: 10px; font-weight: 800; color: var(--navy); }
+    .logo-mark { width: 40px; height: 40px; background: var(--navy); color: var(--yellow); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 800; }
+    nav { display: flex; gap: 20px; font-weight: 700; font-size: 14px; }
+    nav a:hover { color: var(--yellow-dark); }
+    .hero { padding: 40px 0 24px; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 32px; align-items: center; }
+    .hero h1 { font-size: clamp(32px, 5vw, 46px); line-height: 1.05; margin: 0 0 10px; color: var(--navy); font-weight: 800; letter-spacing: -.02em; }
+    .hero .lead { font-size: 17px; color: var(--muted); margin: 0 0 20px; max-width: 420px; }
+    .hero-actions { display: flex; flex-direction: column; gap: 10px; max-width: 340px; }
+    .btn { display: flex; align-items: center; justify-content: center; padding: 16px 20px; border-radius: 8px; font-weight: 800; font-size: 16px; min-height: 52px; transition: transform .1s, background .15s; }
+    .btn:focus { outline: 3px solid var(--yellow); outline-offset: 2px; }
+    .btn-emergency { background: var(--yellow); color: var(--navy); }
+    .btn-emergency:hover { background: var(--yellow-dark); transform: translateY(-1px); }
     .btn-wa { background: var(--wa); color: #fff; }
-    .btn-wa:hover { background: #189a48; transform: translateY(-1px); }
-    .hero-img {
-      border-radius: 14px;
-      overflow: hidden;
-      box-shadow: var(--shadow-lg);
-      border: 1px solid var(--border);
-    }
-    .hero-img img { width: 100%; height: 360px; object-fit: cover; }
-
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 14px;
-      margin: 16px 0 56px;
-    }
-    .stat {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 22px 14px;
-      text-align: center;
-      box-shadow: var(--shadow);
-    }
-    .stat b { display: block; font-size: 19px; color: var(--navy); font-weight: 800; letter-spacing: -.02em; margin-bottom: 2px; }
-    .stat span { font-size: 12.5px; color: var(--muted); }
-
-    section { padding: 48px 0; }
-    .section-head { margin-bottom: 26px; }
-    .section-head h2 {
-      font-size: 30px;
-      letter-spacing: -.025em;
-      margin: 0 0 6px;
-      color: var(--navy);
-      font-weight: 800;
-    }
-    .section-head p { margin: 0; color: var(--muted); font-size: 15.5px; }
-
-    .services { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-    .service {
-      background: var(--white);
-      border-radius: 12px;
-      overflow: hidden;
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow);
-      transition: box-shadow .2s;
-    }
-    .service:hover { box-shadow: 0 6px 20px rgba(11,31,58,.1); }
-    .service img { width: 100%; height: 190px; object-fit: cover; }
-    .service-body { padding: 22px 22px 24px; }
-    .service h3 { margin: 0 0 6px; font-size: 20px; color: var(--navy); font-weight: 800; }
-    .service p { margin: 0 0 12px; color: var(--muted); font-size: 14.5px; }
-    .service ul { margin: 0; padding: 0; list-style: none; }
-    .service li {
-      padding: 5px 0 5px 16px;
-      position: relative;
-      color: var(--ink);
-      font-size: 14.5px;
-    }
-    .service li::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 11px;
-      width: 5px;
-      height: 5px;
-      background: var(--gold);
-      border-radius: 50%;
-    }
-    .also-services {
-      margin-top: 18px;
-      padding: 16px 20px;
-      background: var(--white);
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 14.5px;
-      box-shadow: var(--shadow);
-    }
-
-    .location-box {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 28px 30px;
-      box-shadow: var(--shadow);
-    }
-    .location-box h2 { margin: 0 0 6px; font-size: 26px; color: var(--navy); font-weight: 800; letter-spacing: -.02em; }
-    .location-box p { margin: 0; color: var(--muted); font-size: 15.5px; }
-
-    .quote-section {
-      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-soft) 100%);
-      border-radius: 16px;
-      padding: 42px;
-      display: grid;
-      grid-template-columns: 1fr 1.05fr;
-      gap: 44px;
-      color: #fff;
-      box-shadow: var(--shadow-lg);
-    }
-    .quote-section h2 { margin: 0 0 10px; font-size: 26px; font-weight: 800; letter-spacing: -.02em; }
-    .quote-section p { margin: 0 0 18px; color: #c8d4e4; font-size: 15px; }
-    .quote-contacts a { color: var(--gold-light); font-weight: 700; display: inline-block; margin-right: 18px; font-size: 15px; transition: color .15s; }
-    .quote-contacts a:hover { color: #fff; }
-    .quote-form label { display: block; font-size: 12.5px; font-weight: 700; margin: 14px 0 6px; color: #c8d4e4; letter-spacing: .02em; }
-    .quote-form input,
-    .quote-form select,
-    .quote-form textarea {
-      width: 100%;
-      padding: 12px 14px;
-      border: 0;
-      border-radius: 8px;
-      font: inherit;
-      background: #fff;
-      color: var(--ink);
-      box-shadow: inset 0 1px 2px rgba(0,0,0,.04);
-    }
-    .quote-form textarea { min-height: 88px; resize: vertical; }
-    .quote-form button {
-      margin-top: 16px;
-      background: var(--gold);
-      color: var(--navy);
-      border: 0;
-      padding: 13px 22px;
-      border-radius: 8px;
-      font: inherit;
-      font-weight: 800;
-      cursor: pointer;
-      transition: background .15s;
-    }
-    .quote-form button:hover { background: #c9a234; }
-
-    footer {
-      padding: 28px 0 110px;
-      text-align: center;
-      color: var(--muted);
-      font-size: 13.5px;
-      line-height: 1.7;
-    }
-
-    .mobile-dock {
-      display: none;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: 100;
-    }
-    .mobile-dock a {
-      flex: 1;
-      text-align: center;
-      padding: 15px;
-      font-weight: 700;
-      color: #fff;
-      font-size: 15px;
-    }
-    .mobile-dock .call { background: var(--navy); }
-    .mobile-dock .wa { background: var(--wa); }
-
+    .btn-wa:hover { background: #1fb855; }
+    .secondary-number { font-size: 14px; color: var(--muted); margin-top: 6px; }
+    .secondary-number a { color: var(--navy); font-weight: 700; text-decoration: underline; }
+    .hero-img { border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(10,26,51,.12); }
+    .hero-img img { width: 100%; height: 340px; object-fit: cover; }
+    .emergencies { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 28px; }
+    .chip { background: var(--white); border: 1px solid var(--border); border-radius: 20px; padding: 6px 12px; font-size: 13px; font-weight: 700; color: var(--navy); }
+    section { padding: 40px 0; }
+    h2 { font-size: 28px; margin: 0 0 8px; color: var(--navy); font-weight: 800; letter-spacing: -.02em; }
+    .sub { color: var(--muted); margin: 0 0 20px; }
+    .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .card { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+    .card h3 { margin: 0 0 8px; font-size: 18px; color: var(--navy); }
+    .card ul { margin: 0; padding-left: 18px; }
+    .card li { margin: 4px 0; }
+    .why { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .why div { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+    .why h3 { margin: 0 0 6px; font-size: 16px; color: var(--navy); }
+    .why p { margin: 0; font-size: 14px; color: var(--muted); }
+    .terms { font-size: 12px; color: var(--muted); margin-top: 6px; }
+    .process { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .step { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 20px; text-align: center; }
+    .step .num { width: 36px; height: 36px; background: var(--yellow); color: var(--navy); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; margin: 0 auto 10px; }
+    .license { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+    .license ul { margin: 8px 0 0; padding-left: 18px; }
+    .reviews { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .review { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 16px; font-size: 14px; }
+    .review .stars { color: var(--yellow-dark); font-weight: 800; margin-bottom: 6px; }
+    .faq details { background: var(--white); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 8px; }
+    .faq summary { padding: 14px 16px; font-weight: 700; cursor: pointer; }
+    .faq summary:focus { outline: 2px solid var(--yellow); }
+    .faq details p { margin: 0; padding: 0 16px 14px; color: var(--muted); font-size: 14px; }
+    .quote-box { background: var(--navy); color: #fff; border-radius: 16px; padding: 28px; display: grid; grid-template-columns: 1fr 1.1fr; gap: 28px; }
+    .quote-box h2 { color: #fff; }
+    .quote-box p { color: #c5d0de; }
+    .quote-box a { color: var(--yellow); font-weight: 700; }
+    label { display: block; font-size: 13px; font-weight: 700; margin: 12px 0 4px; }
+    input, select, textarea { width: 100%; padding: 12px; border: 0; border-radius: 6px; font: inherit; }
+    textarea { min-height: 80px; }
+    button[type="submit"] { margin-top: 12px; background: var(--yellow); color: var(--navy); border: 0; padding: 14px 18px; border-radius: 8px; font: inherit; font-weight: 800; cursor: pointer; width: 100%; min-height: 48px; }
+    button[type="submit"]:hover { background: var(--yellow-dark); }
+    .error { color: #ff6b6b; font-size: 13px; margin-top: 4px; display: none; }
+    footer { padding: 24px 0 100px; font-size: 13px; color: var(--muted); text-align: center; }
+    .dock { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 50; }
+    .dock a { flex: 1; text-align: center; padding: 16px; font-weight: 800; color: #fff; min-height: 52px; display: flex; align-items: center; justify-content: center; }
+    .dock .c { background: var(--yellow); color: var(--navy); }
+    .dock .w { background: var(--wa); }
     @media (max-width: 800px) {
-      nav, .btn-call { display: none; }
-      .hero, .services, .quote-section, .stats { grid-template-columns: 1fr; }
-      .hero { padding: 40px 0 28px; gap: 28px; }
+      nav { display: none; }
+      .hero, .cards, .why, .process, .reviews, .quote-box { grid-template-columns: 1fr; }
       .hero-img img { height: 220px; }
-      .mobile-dock { display: flex; }
-      .topbar .wrap { flex-direction: column; align-items: flex-start; gap: 4px; }
-      .quote-section { padding: 28px 22px; }
+      .dock { display: flex; }
     }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "Electrician", "Plumber"],
+    "name": "24/7 CARE Electrical and Plumbing",
+    "description": "Emergency electrical and plumbing services in Johannesburg and Gauteng. Open 24/7. No call-out fee.",
+    "url": "https://247-care-sample.vercel.app/",
+    "telephone": "+27792185175",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "13 Gold Street",
+      "addressLocality": "Sophiatown",
+      "addressRegion": "Gauteng",
+      "postalCode": "2092",
+      "addressCountry": "ZA"
+    },
+    "areaServed": ["Johannesburg", "Pretoria", "Gauteng"],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "priceRange": "$$"
+  }
+  </script>
 </head>
 <body>
-  <div class="topbar">
+  <div class="top">
     <div class="wrap">
       <span class="slogan">We Don't Just Fix it — We CARE 24/7</span>
-      <span class="phones">
-        <a href="tel:+27712311207">071 231 1207</a>
-        <a href="tel:+27792185175">079 218 5175</a>
-      </span>
+      <span>Also: <a href="tel:+27712311207">071 231 1207</a></span>
     </div>
   </div>
-
   <header>
     <div class="wrap">
-      <a href="#top" class="logo">
-        <div class="logo-mark">24/7</div>
-        <div class="logo-text">
-          <b>CARE</b>
-          <span>Electrical & Plumbing</span>
-        </div>
+      <a href="#top" class="logo" aria-label="24/7 CARE home">
+        <span class="logo-mark">24/7</span>
+        <span>CARE<br><small style="font-weight:600;font-size:11px;color:var(--muted)">Electrical & Plumbing</small></span>
       </a>
       <nav>
         <a href="#services">Services</a>
-        <a href="#location">Location</a>
-        <a href="#quote">Get a Quote</a>
+        <a href="#why">Why us</a>
+        <a href="#faq">FAQ</a>
+        <a href="#quote">Quote</a>
       </nav>
-      <a href="tel:+27792185175" class="btn-call">Call now</a>
     </div>
   </header>
-
   <main class="wrap" id="top">
     <div class="hero">
       <div>
-        <p class="hero-eyebrow">Sophiatown · Johannesburg</p>
-        <h1>Power, hot water, a burst pipe. One call.</h1>
-        <p class="hero-slogan">We Don't Just Fix it — We CARE 24/7</p>
-        <p class="hero-lead">Open all day and all night. No call-out fee. Free quotes. No job too big or too small. Serving Johannesburg, Pretoria and Gauteng.</p>
+        <h1>Emergency? Call now.</h1>
+        <p class="lead">Burst geyser, no power, leak, or blocked drain. We are open 24 hours. No call-out fee. Free quote before we start.</p>
         <div class="hero-actions">
-          <a href="tel:+27792185175" class="btn btn-primary">Call 079 218 5175</a>
-          <a href="tel:+27712311207" class="btn btn-secondary">Call 071 231 1207</a>
-          <a href="https://wa.me/27792185175?text=Hi%20%E2%80%94%20I%20need%20a%20quote." class="btn btn-wa">WhatsApp</a>
+          <a class="btn btn-emergency" href="tel:+27792185175" aria-label="Call emergency number 079 218 5175">Emergency? Call 079 218 5175</a>
+          <a class="btn btn-wa" href="https://wa.me/27792185175?text=Hi%20%E2%80%94%20I%20need%20help%20now." aria-label="WhatsApp 24/7 CARE">WhatsApp a photo</a>
+          <p class="secondary-number">Second line: <a href="tel:+27712311207">071 231 1207</a></p>
         </div>
       </div>
       <div class="hero-img">
-        <img src="https://cdn.jsdelivr.net/gh/lebzantai/247-care-sample@0035db2686374f3162600ee0dce630f0af99a34e/board.jpg" alt="Electrical distribution board inspection" />
+        <img src="https://cdn.jsdelivr.net/gh/lebzantai/247-care-sample@0035db2686374f3162600ee0dce630f0af99a34e/board.jpg" alt="Electrician checking a distribution board in a Johannesburg home" width="600" height="340" />
       </div>
     </div>
-
-    <div class="stats">
-      <div class="stat"><b>Since 2015</b><span>Sophiatown based</span></div>
-      <div class="stat"><b>24/7</b><span>Every day of the week</span></div>
-      <div class="stat"><b>R0</b><span>No call-out fee</span></div>
-      <div class="stat"><b>20% off</b><span>New installs & repairs</span></div>
+    <div class="emergencies" aria-label="Common emergencies">
+      <span class="chip">No power</span>
+      <span class="chip">Tripping DB</span>
+      <span class="chip">Burst geyser</span>
+      <span class="chip">No hot water</span>
+      <span class="chip">Blocked drain</span>
+      <span class="chip">Leak</span>
     </div>
-
     <section id="services">
-      <div class="section-head">
-        <h2>What we fix</h2>
-        <p>Electrical and plumbing on the same numbers, for homes and small businesses.</p>
-      </div>
-      <div class="services">
-        <article class="service">
-          <img src="https://cdn.jsdelivr.net/gh/lebzantai/247-care-sample@0035db2686374f3162600ee0dce630f0af99a34e/board.jpg" alt="Electrical work" />
-          <div class="service-body">
-            <h3>Electrical</h3>
-            <p>No power, fault finding, new installations and certificates of compliance.</p>
-            <ul>
-              <li>Power surges and surge arrestors</li>
-              <li>Lights, plugs and converters</li>
-              <li>Stove elements and thermostats</li>
-              <li>Changeover switches and three phase</li>
-            </ul>
-          </div>
+      <h2>What we fix</h2>
+      <p class="sub">Electrical and plumbing on the same number. Homes and small businesses across Gauteng.</p>
+      <div class="cards">
+        <article class="card">
+          <img src="https://cdn.jsdelivr.net/gh/lebzantai/247-care-sample@0035db2686374f3162600ee0dce630f0af99a34e/board.jpg" alt="Open distribution board with wiring" width="400" height="160" loading="lazy" style="border-radius:8px;height:160px;object-fit:cover;margin-bottom:12px;" />
+          <h3>Electrical</h3>
+          <ul>
+            <li>No power and fault finding</li>
+            <li>Tripping breakers and DB upgrades</li>
+            <li>Surge protection</li>
+            <li>Certificates of Compliance</li>
+          </ul>
         </article>
-        <article class="service">
-          <img src="https://cdn.jsdelivr.net/gh/lebzantai/247-care-sample@0035db2686374f3162600ee0dce630f0af99a34e/pipes.jpg" alt="Plumbing work" />
-          <div class="service-body">
-            <h3>Plumbing</h3>
-            <p>Burst geysers, no hot water, burst pipes and the main line.</p>
-            <ul>
-              <li>Geyser elements and thermostats</li>
-              <li>Showers, toilets and basins</li>
-              <li>Pressure valves</li>
-              <li>Leaks</li>
-            </ul>
-          </div>
+        <article class="card">
+          <img src="https://cdn.jsdelivr.net/gh/lebzantai/247-care-sample@0035db2686374f3162600ee0dce630f0af99a34e/pipes.jpg" alt="Plumber working on copper pipes and geyser" width="400" height="160" loading="lazy" style="border-radius:8px;height:160px;object-fit:cover;margin-bottom:12px;" />
+          <h3>Plumbing</h3>
+          <ul>
+            <li>Burst geysers and no hot water</li>
+            <li>Leaks and burst pipes</li>
+            <li>Blocked drains</li>
+            <li>Geyser elements and valves</li>
+          </ul>
         </article>
       </div>
-      <div class="also-services">Also: gate motors, electric fencing, clear view fence, waterproofing, roof repairs and house maintenance.</div>
+      <p class="sub" style="margin-top:16px;">Also: gate motors, electric fencing, clear view fencing, waterproofing, roof repairs.</p>
     </section>
-
-    <section id="location">
-      <div class="location-box">
-        <h2>Where we work</h2>
-        <p>13 Gold Street, Sophiatown, Johannesburg, 2092. Covering Johannesburg, Pretoria and surrounding Gauteng.</p>
-      </div>
-    </section>
-
-    <section id="quote">
-      <div class="quote-section">
+    <section id="why">
+      <h2>Why choose us</h2>
+      <div class="why">
         <div>
-          <h2>Tell us the job.</h2>
-          <p>If it is down right now, call. A photo of the board, geyser or leak is enough.</p>
-          <div class="quote-contacts">
-            <a href="tel:+27792185175">079 218 5175</a>
-            <a href="tel:+27712311207">071 231 1207</a>
-            <a href="mailto:247careelectrical.admin@gmail.com">Email us</a>
-          </div>
+          <h3>R0 call-out fee</h3>
+          <p>You only pay for the work we do.</p>
+          <p class="terms">Terms: No charge for coming out. Labour and parts are quoted and approved before we start. Offer does not cover materials already purchased or cancelled jobs after arrival.</p>
         </div>
-        <form class="quote-form" id="quoteform">
+        <div>
+          <h3>20% off</h3>
+          <p>On new installs and repairs.</p>
+          <p class="terms">Terms: Discount applies to labour on standard residential jobs. Does not apply to emergency after-hours premium, large commercial work, or parts. Mention the offer when you call. No end date currently set.</p>
+        </div>
+        <div>
+          <h3>Open 24/7</h3>
+          <p>Nights, weekends, and public holidays.</p>
+          <p class="terms">After-hours pricing may apply. We will tell you the rate before we leave.</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>How it works</h2>
+      <div class="process">
+        <div class="step">
+          <div class="num">1</div>
+          <h3>Call or WhatsApp</h3>
+          <p>Tell us the problem. Send a photo if you can.</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <h3>We arrive and quote</h3>
+          <p>We inspect and give a clear price before any work.</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <h3>You approve, we fix</h3>
+          <p>Only then do we start. No surprises.</p>
+        </div>
+      </div>
+      <p class="sub" style="margin-top:12px;">[PLACEHOLDER: typical response time, e.g. "Most jobs in Johannesburg within 60–90 minutes"]</p>
+    </section>
+    <section>
+      <h2>Licensing & compliance</h2>
+      <div class="license">
+        <p>We issue Certificates of Compliance for electrical and plumbing work where required.</p>
+        <ul>
+          <li>[PLACEHOLDER: Registered electrician number]</li>
+          <li>[PLACEHOLDER: PIRB plumber registration number]</li>
+          <li>Electrical CoC issued on request (valid for 2 years)</li>
+          <li>Plumbing CoC for geysers and hot water systems</li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <h2>What customers say</h2>
+      <div class="reviews">
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>[PLACEHOLDER: Customer review 1 — name, suburb, short quote]</p>
+        </div>
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>[PLACEHOLDER: Customer review 2 — name, suburb, short quote]</p>
+        </div>
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>[PLACEHOLDER: Customer review 3 — name, suburb, short quote]</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Where we work</h2>
+      <p>13 Gold Street, Sophiatown, Johannesburg 2092.</p>
+      <p>We cover Johannesburg, Pretoria, and surrounding Gauteng areas including Soweto, Randburg, Sandton, Roodepoort, Midrand, and the CBD.</p>
+      <p><a href="https://maps.google.com/?q=13+Gold+Street+Sophiatown+Johannesburg+2092" target="_blank" rel="noopener">Open in Google Maps</a></p>
+    </section>
+    <section id="faq" class="faq">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Is there a call-out fee?</summary>
+        <p>No. We do not charge to come out. You only pay for the work you approve.</p>
+      </details>
+      <details>
+        <summary>Do you charge more after hours?</summary>
+        <p>Yes, after-hours and weekend rates may be higher. We confirm the rate before we leave.</p>
+      </details>
+      <details>
+        <summary>How long does a Certificate of Compliance take?</summary>
+        <p>[PLACEHOLDER: typical COC turnaround, e.g. "Same day or next day for most residential jobs"]</p>
+      </details>
+      <details>
+        <summary>Which areas do you cover?</summary>
+        <p>Johannesburg, Pretoria, and most of Gauteng. Call to confirm if you are on the edge of the area.</p>
+      </details>
+      <details>
+        <summary>How can I pay?</summary>
+        <p>[PLACEHOLDER: payment methods, e.g. "Cash, EFT, card"]</p>
+      </details>
+      <details>
+        <summary>Do you guarantee the work?</summary>
+        <p>[PLACEHOLDER: guarantee terms, e.g. "Labour guaranteed for 90 days on standard repairs"]</p>
+      </details>
+      <details>
+        <summary>Can I send a photo first?</summary>
+        <p>Yes. WhatsApp a photo of the board, geyser, or leak and we can often quote faster.</p>
+      </details>
+    </section>
+    <section id="quote">
+      <div class="quote-box">
+        <div>
+          <h2>Get a quote</h2>
+          <p>Fill this in and we open WhatsApp with your details. Or call now if it is urgent.</p>
+          <p><a href="tel:+27792185175">079 218 5175</a> · <a href="tel:+27712311207">071 231 1207</a></p>
+          <p><a href="mailto:247careelectrical.admin@gmail.com">247careelectrical.admin@gmail.com</a></p>
+        </div>
+        <form id="quoteform" novalidate>
           <label for="job">Job</label>
-          <select id="job">
+          <select id="job" required>
+            <option value="">Select</option>
             <option>No power / fault finding</option>
+            <option>Tripping DB</option>
             <option>Certificate of Compliance</option>
             <option>Burst geyser or no hot water</option>
             <option>Burst pipe or leak</option>
+            <option>Blocked drain</option>
             <option>New installation</option>
             <option>Gate motor or electric fence</option>
             <option>Other</option>
           </select>
+          <div class="error" id="job-error">Please select a job type.</div>
           <label for="area">Area</label>
-          <input id="area" placeholder="Sophiatown, Roodepoort, Pretoria" />
+          <select id="area" required>
+            <option value="">Select area</option>
+            <option>Sophiatown</option>
+            <option>Soweto</option>
+            <option>Johannesburg CBD</option>
+            <option>Randburg</option>
+            <option>Sandton</option>
+            <option>Roodepoort</option>
+            <option>Midrand</option>
+            <option>Pretoria</option>
+            <option>Other Gauteng</option>
+          </select>
+          <div class="error" id="area-error">Please select your area.</div>
+          <label for="phone">Your phone</label>
+          <input id="phone" type="tel" placeholder="07X XXX XXXX" required />
+          <div class="error" id="phone-error">Please enter a valid South African number.</div>
           <label for="detail">What happened</label>
-          <textarea id="detail"></textarea>
+          <textarea id="detail" placeholder="e.g. Geyser burst this morning, water in the ceiling"></textarea>
+          <p style="font-size:13px;color:#c5d0de;margin:8px 0 0;">Tip: send a photo on WhatsApp after this form.</p>
           <button type="submit">Send on WhatsApp</button>
         </form>
       </div>
     </section>
   </main>
-
   <footer class="wrap">
-    24/7 CARE Electrical and Plumbing · 13 Gold Street, Sophiatown, Johannesburg 2092 · 071 231 1207 · 079 218 5175 · 247careelectrical.admin@gmail.com · Open 24 hours
+    24/7 CARE Electrical and Plumbing · 13 Gold Street, Sophiatown, Johannesburg 2092 · Open 24 hours · <a href="https://maps.google.com/?q=13+Gold+Street+Sophiatown+Johannesburg+2092" target="_blank" rel="noopener">Map</a><br>
+    079 218 5175 · 071 231 1207 · 247careelectrical.admin@gmail.com
   </footer>
-
-  <div class="mobile-dock">
-    <a href="tel:+27792185175" class="call">Call</a>
-    <a href="https://wa.me/27792185175" class="wa">WhatsApp</a>
+  <div class="dock">
+    <a class="c" href="tel:+27792185175" aria-label="Call 079 218 5175">Call</a>
+    <a class="w" href="https://wa.me/27792185175" aria-label="WhatsApp 24/7 CARE">WhatsApp</a>
   </div>
-
   <script>
     document.getElementById("quoteform").addEventListener("submit", function (e) {
       e.preventDefault();
-      var text = "Hi 24/7 Care \u2014 quote please.\nJob: " + document.getElementById("job").value + "\nArea: " + (document.getElementById("area").value || "not given") + "\nNote: " + (document.getElementById("detail").value || "no extra note");
+      var job = document.getElementById("job");
+      var area = document.getElementById("area");
+      var phone = document.getElementById("phone");
+      var detail = document.getElementById("detail");
+      var valid = true;
+      ["job-error","area-error","phone-error"].forEach(function(id){ document.getElementById(id).style.display="none"; });
+      if (!job.value) { document.getElementById("job-error").style.display="block"; valid = false; }
+      if (!area.value) { document.getElementById("area-error").style.display="block"; valid = false; }
+      if (!/^0[6-8]\d{8}$/.test(phone.value.replace(/\s/g,""))) { document.getElementById("phone-error").style.display="block"; valid = false; }
+      if (!valid) return;
+      var text = "Hi 24/7 CARE \u2014 quote please.\nJob: " + job.value + "\nArea: " + area.value + "\nPhone: " + phone.value + "\nNote: " + (detail.value || "no extra note") + "\n(Please send a photo if you can)";
       location.href = "https://wa.me/27792185175?text=" + encodeURIComponent(text);
     });
   </script>
